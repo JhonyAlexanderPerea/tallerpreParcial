@@ -9,15 +9,18 @@ package co.edu.uniquindio.poo;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EmpleadoTiempoCompletoTest {
+public class EmpleadoTiempoCompletoTest
+{
 
     @Test
-    public void testCalcularSalarioTiempoCompleto() {
+    public void testCalcularSalarioTiempoCompleto()
+    {
         EmpleadoTiempoCompleto empleado = new EmpleadoTiempoCompleto("Juan", "1"){};
         empleado.setSalario(50000);
 
         int salarioCalculado = empleado.calcularSalario();
 
         assertEquals(50000, salarioCalculado);
+        assertEquals(100,salarioCalculado);
     }
 }
